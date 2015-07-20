@@ -1,0 +1,43 @@
+.container {
+  max-width: 600px;
+}
+
+
+//header
+.main-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(255,255,255,.85);
+  padding: 10px 0;
+  z-index: 100;
+  .main-logo {
+    display: block;
+    max-height: 65px;
+    margin: 0 auto;
+  }
+}
+
+.masthead {
+  padding-top: 85px;
+  text-align: center;
+  .clock-list {
+    padding: 0;
+    margin: 20px 0;
+    li {
+      list-style: none;
+    }
+  }
+}
+
+//flipper
+.flip-clock-wrapper {
+  margin: 20px 0;
+}
+.flip-clock-divider,
+.flip-clock-wrapper ul {
+  display: inline-block;
+  float: none;
+}
+

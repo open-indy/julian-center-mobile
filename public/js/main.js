@@ -1,0 +1,39 @@
+$(document).ready(function(){
+
+  // init flip clock
+  $('.timer-clock').FlipClock({
+    clockFace: 'MinuteCounter',
+    callbacks: {
+      interval: function() {
+        checkVals();
+      }
+    }
+  });
+
+  // update flipper values
+  var i = 0;
+  var womanCount = 0;
+  var childCount = 0;
+  function checkVals() {
+    if (i % 9 == 0) {
+      womanCount++;
+      $('.woman-number').html(womanCount);
+      if (womanCount === 1) {
+        $('.women-noun').html('woman has');
+      } else {
+        $('.women-noun').html('women have');
+      }
+    }
+    if (i % 120 == 0) {
+      childCount++;
+      $('.child-number').html(childCount);
+      if (childCount === 1) {
+        $('.child-noun').html('child has');
+      } else {
+        $('.child-noun').html('children have');
+      }
+    }
+    i++;
+  }
+
+});
