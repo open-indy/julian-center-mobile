@@ -24,7 +24,6 @@ gulp.task('scripts', function() {
 
 
 gulp.task('move', ['clean', 'sass', 'scripts'], function(){
-
     gulp.src('src/css/flipclock.css')
         .pipe(gulp.dest('dist/css'));
 
