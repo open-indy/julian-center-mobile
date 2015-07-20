@@ -1,3 +1,6 @@
+// run two different counters
+// calculate the time between sunrise and now and calculate the number
+
 $(document).ready(function(){
 
   // init flip clock
