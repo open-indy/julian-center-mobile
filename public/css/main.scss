@@ -1,5 +1,11 @@
+body {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  color: #555;
+}
+
 .container {
   max-width: 600px;
+  width: 92%;
 }
 
 
@@ -9,7 +15,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  background: rgba(255,255,255,.85);
+  background: rgba(255,255,255,.45);
   padding: 10px 0;
   z-index: 100;
   .main-logo {
@@ -19,14 +25,28 @@
   }
 }
 
+// masthead
 .masthead {
-  padding-top: 85px;
+  padding: 185px 0 125px;
   text-align: center;
+  background: url(../img/woman1.jpg) no-repeat top center;
+  background-size: cover;
   .clock-list {
     padding: 0;
-    margin: 20px 0;
+    margin: 20px 0 50px;
     li {
       list-style: none;
+    }
+  }
+  .ghost-btn {
+    padding: 10px 20px;
+    display: inline-block;
+    margin: 0 auto;
+    color: #27AE60;
+    border: 2px solid #27AE60;
+    border-radius: 4px;
+    i {
+      margin-left: 10px;
     }
   }
 }
@@ -40,4 +60,19 @@
   display: inline-block;
   float: none;
 }
+.flip-clock-label {
+  display: none;
+}
 
+// about us
+.about-us {
+  padding: 50px 0;
+  background: #27AE60;
+  text-align: center;
+  color: #fff;
+  p {
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
