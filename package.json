@@ -1,0 +1,22 @@
+{
+  "name": "c4k-julian-center",
+  "version": "1.0.0",
+  "description": "GenCon mobile app created during the 2nd annual Coding 4 Kindness event.",
+  "main": "app/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/scott-joe-williams/c4k-julian-center.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scott-joe-williams/c4k-julian-center/issues"
+  },
+  "homepage": "https://github.com/scott-joe-williams/c4k-julian-center",
+  "dependencies": {
+    "express": "^4.13.1"
+  }
+}
