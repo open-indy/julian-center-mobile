@@ -1,0 +1,1 @@
+$(document).ready(function(){function n(){0!==c&&c%9===0&&(e++,$(".women-number").html(e),$(".women-noun").html(1===e?"woman has":"women have")),0!==c&&c%120===0&&(l++,$(".child-number").html(l),$(".child-noun").html(1===l?"child has":"children have")),c++}$(".timer-clock").FlipClock({clockFace:"MinuteCounter",callbacks:{interval:function(){n()}}});var c=0,e=0,l=0});
