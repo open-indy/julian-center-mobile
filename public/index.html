@@ -2,9 +2,30 @@
 <html>
     <head>
         <title>The Julian Center</title>
+        
+        <style>
+            .greeting {
+                color: red;
+            }
+        </style>
+        
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script>
+            
+            $(function () {
+                
+                $('.greeting').hide();
+                
+                $('#sayHi').click(function () {
+                    $('.greeting').show();
+                });
+                
+            });
+        </script>
     </head>
     <body>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi elit mi, luctus quis lorem sit amet.</p>
-        <p>Hi A'via</p>
+        <p class="greeting">Hi A'via</p>
+        <button id="sayHi">Say Hi</button>
     </body>
 </html>
