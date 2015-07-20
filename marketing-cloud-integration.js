@@ -9,7 +9,7 @@ client.registerMethod("jsonMethod", "http://google.com/", "GET");
 client.registerMethod('authenticate', 'https://auth.exacttargetapis.com/v1/requestToken', 'POST');
 client.registerMethod('messageDefinitionSend', 'https://www.exacttargetapis.com/messaging/v1/messageDefinitionSends/key:GenCon2015-Signups/send', 'POST');
  
-exports.fireSignupEmail = function(emailAddress) {
+exports.fireSignupEmail = function(emailAddress, firstName, lastName) {
     console.log('Firing email to ' + emailAddress);
 
     var authArgs = {
