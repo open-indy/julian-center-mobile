@@ -1,11 +1,40 @@
+// vars
+$purple : #9B59B6;
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 body {
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   color: #555;
+  font-weight: 300;
+}
+h1, h2, h3, h4 {
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: $purple;
 }
 
 .container {
   max-width: 600px;
   width: 92%;
+}
+
+.underline {
+  text-decoration: underline;
 }
 
 
@@ -42,9 +71,10 @@ body {
     padding: 10px 20px;
     display: inline-block;
     margin: 0 auto;
-    color: #27AE60;
-    border: 2px solid #27AE60;
+    color: $purple;
+    border: 1px solid $purple;
     border-radius: 4px;
+    font-weight: 300;
     i {
       margin-left: 10px;
     }
@@ -102,12 +132,74 @@ body {
 // about us
 .about-us {
   padding: 50px 0;
-  background: #27AE60;
+  background: $purple;
   text-align: center;
   color: #fff;
   p {
     &:last-child {
       margin: 0;
+    }
+  }
+}
+
+.how-to-help {
+  padding: 50px 0;
+  text-align: center;
+  .link-list {
+    margin: 20px 0;
+    padding: 0;
+    li {
+      list-style: none;
+    }
+  }
+  .btn {
+    display: block;
+    text-align: center;
+    margin: 15px 0;
+    padding: 15px;
+    background: $purple;
+    border-radius: 4px;
+    color: #fff;
+  }
+
+}
+
+.newsletter-signup {
+  padding: 50px 0;
+  text-align: center;
+  background: #eee;
+  form {
+    label {
+      display: block;
+      text-align: left;
+      font-size: 14px;
+      margin: 0;
+      font-weight: 300;
+    }
+    input {
+      display: block;
+      margin: 0 0 10px;
+      width: 100%;
+      font-size: 16px;
+      padding: 15px;
+      box-shadow: none;
+      outline: none;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      -webkit-appearance: none;
+      box-shadow: none;
+      outline: none;
+      border: none;
+      display: block;
+      text-align: center;
+      margin: 15px 0;
+      padding: 15px;
+      width: 100%;
+      background: $purple;
+      border-radius: 4px;
+      color: #fff;
     }
   }
 }

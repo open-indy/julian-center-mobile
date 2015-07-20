@@ -1,5 +1,5 @@
 .idea/
 *.swp
 node_modules/
-dist/
 .sass-cache/
+dist/css/main.css
