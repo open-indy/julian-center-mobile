@@ -15,16 +15,16 @@ $(document).ready(function(){
   var womanCount = 0;
   var childCount = 0;
   function checkVals() {
-    if (i % 9 == 0) {
+    if ((i !== 0) && (i % 9 === 0)) {
       womanCount++;
-      $('.woman-number').html(womanCount);
+      $('.women-number').html(womanCount);
       if (womanCount === 1) {
         $('.women-noun').html('woman has');
       } else {
         $('.women-noun').html('women have');
       }
     }
-    if (i % 120 == 0) {
+    if ((i !== 0) && (i % 120 === 0))  {
       childCount++;
       $('.child-number').html(childCount);
       if (childCount === 1) {
