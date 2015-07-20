@@ -40,33 +40,65 @@
 <body>
 
   <header class="main-header">
-    <img class="main-logo" src="img/logo.png">
-    <img class="logo-sm" src="img/logo-sm.png">
+    <div class="container">
+      <div class="row">
+        <img class="main-logo" src="img/logo.png">
+      </div>
+    </div>
   </header>
 
   <section class="masthead">
-    <h3>In the last</h3>
-    <h1 class="countdown-clock"></h1>
-    <ul class="clock-list">
-      <li><span class="women-number">0</span> women have been beaten.</li>
-      <li><span class="child-number">0</span> children have been beaten.</li>
-    </ul>
+    <div class="container">
+      <div class="row">
+        <h3>In the last</h3>
+        <h1 class="timer-clock"></h1>
+        <ul class="clock-list">
+          <li><span class="women-number">0</span> women have been beaten.</li>
+          <li><span class="child-number">0</span> children have been beaten.</li>
+        </ul>
+        <h4>Help Us Stop the Statistics <i class="fa fa-arrow-circle-o-down"></i></h4>
+      </div>
+    </div>
   </section>
 
   <section class="about-us">
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section class="how-to-help">
-    <h1>How You Can Help</h1>
-    <p>We are happy to receive any help your willing to give.</p>
-    <a href="#">Donate $</a>
-    <a href="#">Volunteer</a>
-    <a href="#">Donate Items</a>
+    <div class="container">
+      <div class="row">
+        <h1>How You Can Help</h1>
+        <p>We are happy to receive any help your willing to give.</p>
+        <ul class="link-list">
+          <li><a href="#">Donate $</a></li>
+          <li><a href="#">Volunteer</a></li>
+          <li><a href="#">Donate Items</a></li>
+        </ul>
+      </div>
+    </div>
   </section>
 
   <footer class="main-footer">
   </footer>
+
+  <nav id="fixed-menu">
+    <ul>
+      <li>Top</li>
+      <li>About Us</li>
+      <li>Donate</li>
+    </ul>
+  </nav>
+
+  <div id="menu-btn">
+    <i class="fa fa-bars"></i>
+  </div>
 
   <!-- scripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
