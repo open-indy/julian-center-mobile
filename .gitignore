@@ -1,3 +1,6 @@
 .idea/
 *.swp
 node_modules/
+.sass-cache/
+dist/css/main.css
+.DS_STORE

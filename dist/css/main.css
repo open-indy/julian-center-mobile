@@ -1,0 +1,176 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  color: #555;
+  font-weight: 300;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: #9B59B6;
+}
+
+.container {
+  max-width: 600px;
+  width: 92%;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.main-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.45);
+  padding: 10px 0;
+  z-index: 100;
+}
+.main-header .main-logo {
+  display: block;
+  max-height: 65px;
+  margin: 0 auto;
+}
+
+.masthead {
+  padding: 185px 0 125px;
+  text-align: center;
+  background: url(../img/woman1.jpg) no-repeat top center;
+  background-size: cover;
+}
+.masthead .clock-list {
+  padding: 0;
+  margin: 20px 0 50px;
+}
+.masthead .clock-list li {
+  list-style: none;
+}
+.masthead .ghost-btn {
+  padding: 10px 20px;
+  display: inline-block;
+  margin: 0 auto;
+  color: #9B59B6;
+  border: 1px solid #9B59B6;
+  border-radius: 4px;
+  font-weight: 300;
+}
+.masthead .ghost-btn i {
+  margin-left: 10px;
+}
+
+.flip-clock-wrapper {
+  margin: 20px 0;
+}
+
+.flip-clock-divider,
+.flip-clock-wrapper ul {
+  display: inline-block;
+  float: none;
+}
+
+.flip-clock-label {
+  display: none;
+}
+
+.about-us {
+  padding: 50px 0;
+  background: #9B59B6;
+  text-align: center;
+  color: #fff;
+}
+.about-us p:last-child {
+  margin: 0;
+}
+
+.how-to-help {
+  padding: 50px 0;
+  text-align: center;
+}
+.how-to-help .link-list {
+  margin: 20px 0;
+  padding: 0;
+}
+.how-to-help .link-list li {
+  list-style: none;
+}
+.how-to-help .btn {
+  display: block;
+  text-align: center;
+  margin: 15px 0;
+  padding: 15px;
+  background: #9B59B6;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.newsletter-signup {
+  padding: 50px 0;
+  text-align: center;
+  background: #eee;
+}
+.newsletter-signup form label {
+  display: block;
+  text-align: left;
+  font-size: 14px;
+  margin: 0;
+  font-weight: 300;
+}
+.newsletter-signup form input {
+  display: block;
+  margin: 0 0 10px;
+  width: 100%;
+  font-size: 16px;
+  padding: 15px;
+  box-shadow: none;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.newsletter-signup form button {
+  -webkit-appearance: none;
+  box-shadow: none;
+  outline: none;
+  border: none;
+  display: block;
+  text-align: center;
+  margin: 15px 0;
+  padding: 15px;
+  width: 100%;
+  background: #9B59B6;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.main-footer {
+  padding: 15px 4%;
+  background: #444;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+}
+.main-footer p {
+  margin: 0;
+}
+.main-footer a {
+  color: #fff;
+  text-decoration: underline;
+}
