@@ -1,31 +1,78 @@
-<!DOCTYLE html>
+<!doctype html>
 <html>
-    <head>
-        <title>The Julian Center</title>
-        
-        <style>
-            .greeting {
-                color: red;
-            }
-        </style>
-        
-        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-        <script>
-            
-            $(function () {
-                
-                $('.greeting').hide();
-                
-                $('#sayHi').click(function () {
-                    $('.greeting').show();
-                });
-                
-            });
-        </script>
-    </head>
-    <body>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi elit mi, luctus quis lorem sit amet.</p>
-        <p class="greeting">Hi A'via</p>
-        <button id="sayHi">Say Hi</button>
-    </body>
+<head>
+  <title>The Julian Center | Quick Donate</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="img/favicon/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/favicon/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="img/favicon/apple-touch-icon-60x60.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="img/favicon/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="img/favicon/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="img/favicon/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="img/favicon/favicon-196x196.png" sizes="196x196" />
+  <link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="img/favicon/favicon-128.png" sizes="128x128" />
+  <meta name="application-name" content="&nbsp;"/>
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta name="msapplication-TileImage" content="img/favicon/mstile-144x144.png" />
+  <meta name="msapplication-square70x70logo" content="img/favicon/mstile-70x70.png" />
+  <meta name="msapplication-square150x150logo" content="img/favicon/mstile-150x150.png" />
+  <meta name="msapplication-wide310x150logo" content="img/favicon/mstile-310x150.png" />
+  <meta name="msapplication-square310x310logo" content="img/favicon/mstile-310x310.png" />
+
+
+  <!-- stylesheets -->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/flipclock.css">
+  <link rel="stylesheet" href="css/main.min.css">
+
+  <!-- /stylesheets -->
+
+</head>
+<body>
+
+  <header class="main-header">
+    <img class="main-logo" src="img/logo.png">
+    <img class="logo-sm" src="img/logo-sm.png">
+  </header>
+
+  <section class="masthead">
+    <h3>In the last</h3>
+    <h1 class="countdown-clock"></h1>
+    <ul class="clock-list">
+      <li><span class="women-number">0</span> women have been beaten.</li>
+      <li><span class="child-number">0</span> children have been beaten.</li>
+    </ul>
+  </section>
+
+  <section class="about-us">
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+  </section>
+
+  <section class="how-to-help">
+    <h1>How You Can Help</h1>
+    <p>We are happy to receive any help your willing to give.</p>
+    <a href="#">Donate $</a>
+    <a href="#">Volunteer</a>
+    <a href="#">Donate Items</a>
+  </section>
+
+  <footer class="main-footer">
+  </footer>
+
+  <!-- scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="js/flipclock.min.js"></script>
+  <script src="js/main.js"></script>
+  <!-- /scripts -->
+
+</body>
 </html>
