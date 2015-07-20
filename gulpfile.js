@@ -30,9 +30,6 @@ gulp.task('move', ['clean', 'sass', 'scripts'], function(){
     gulp.src('src/js/flipclock.min.js')
         .pipe(gulp.dest('dist/js'));
 
-    gulp.src('src/js/img/**/*.*')
-        .pipe(gulp.dest('dist/img'));
-
     gulp.src('src/index.html')
         .pipe(gulp.dest('dist'));
 });

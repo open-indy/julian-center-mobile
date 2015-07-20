@@ -203,3 +203,18 @@ a {
     }
   }
 }
+
+.main-footer {
+  padding: 15px 4%;
+  background: #444;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  p {
+    margin: 0;
+  }
+  a {
+    color: #fff;
+    text-decoration: underline;
+  }
+}

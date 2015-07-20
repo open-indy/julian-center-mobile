@@ -13,4 +13,3 @@ app.listen(app.get('port'), function () {
 });
 
 marketingCloudIntegration.fireSignupEmail('jarmstrong@exacttarget.com', 'firstname', 'lastname');
-
