@@ -129,6 +129,25 @@ a {
 
 }
 
+.family-spacer {
+  position: relative;
+  font-size: 12px;
+  text-align: center;
+  p {
+    position: absolute;
+    padding: 10px 4%;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    color: #fff;
+    background: rgba(0,0,0,.75);
+  }
+  img {
+    display: block;
+  }
+}
+
 .newsletter-signup {
   padding: 50px 0;
   text-align: center;
