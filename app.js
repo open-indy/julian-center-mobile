@@ -12,4 +12,4 @@ app.listen(app.get('port'), function () {
     console.log('Express server running on port: ' + app.get('port'));    
 });
 
-marketingCloudIntegration.fireSignupEmail('josh.armstrong@salesforce.com');
+marketingCloudIntegration.fireSignupEmail('jarmstrong@exacttarget.com');
