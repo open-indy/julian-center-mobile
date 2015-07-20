@@ -1,0 +1,106 @@
+body {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  color: #555;
+}
+
+.container {
+  max-width: 600px;
+  width: 92%;
+}
+
+.main-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.45);
+  padding: 10px 0;
+  z-index: 100;
+}
+.main-header .main-logo {
+  display: block;
+  max-height: 65px;
+  margin: 0 auto;
+}
+
+.masthead {
+  padding: 185px 0 125px;
+  text-align: center;
+  background: url(../img/woman1.jpg) no-repeat top center;
+  background-size: cover;
+}
+.masthead .clock-list {
+  padding: 0;
+  margin: 20px 0 50px;
+}
+.masthead .clock-list li {
+  list-style: none;
+}
+.masthead .ghost-btn {
+  padding: 10px 20px;
+  display: inline-block;
+  margin: 0 auto;
+  color: #27AE60;
+  border: 2px solid #27AE60;
+  border-radius: 4px;
+}
+.masthead .ghost-btn i {
+  margin-left: 10px;
+}
+
+.flip-clock-wrapper {
+  margin: 20px 0;
+}
+
+.flip-clock-divider,
+.flip-clock-wrapper ul {
+  display: inline-block;
+  float: none;
+  width: 55px;
+}
+
+.flip-clock-label {
+  display: none;
+}
+
+#menu-btn {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: #3d3d3d;
+  height: 60px;
+  width: 60px;
+  font-size: 35px;
+  text-align: center;
+  padding-top: 6px;
+  border-radius: 30px;
+  color: white;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+#fixed-menu {
+  display: none;
+  position: fixed;
+  bottom: 71px;
+  right: 15px;
+  text-align: right;
+}
+#fixed-menu li {
+  list-style: none;
+  font-size: 20px;
+  background-color: #3d3d3d;
+  color: white;
+  padding: 2px 9px;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+
+.about-us {
+  padding: 50px 0;
+  background: #27AE60;
+  text-align: center;
+  color: #fff;
+}
+.about-us p:last-child {
+  margin: 0;
+}
