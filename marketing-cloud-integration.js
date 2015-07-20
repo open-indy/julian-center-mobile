@@ -3,10 +3,10 @@ var clientId = process.env.clientId || 'SET clientId Environment Var';
 var clientSecret = process.env.clientSecret || 'SET clientId Environment Var';
 
 client = new RestClient();
-// registering remote methods 
+// registering remote methods
 client.registerMethod("jsonMethod", "http://google.com/", "GET");
 client.registerMethod('authenticate', 'https://auth.exacttargetapis.com/v1/requestToken', 'POST');
- 
+
 exports.fireSignupEmail = function(emailAddress) {
     console.log('Firing email to ' + emailAddress);
 
@@ -19,12 +19,12 @@ exports.fireSignupEmail = function(emailAddress) {
         console.log(data);
         console.log(response);
     });
-     
+
     /*
     client.methods.jsonMethod(function(data,response){
-        // parsed response body as js object 
+        // parsed response body as js object
         console.log(data);
-        // raw response 
+        // raw response
         console.log(response);
     });
     */
