@@ -131,3 +131,15 @@ a {
     background: #9B59B6;
     border-radius: 4px;
     color: #fff; }
+
+.main-footer {
+  padding: 15px 4%;
+  background: #444;
+  text-align: center;
+  color: #fff;
+  font-size: 14px; }
+  .main-footer p {
+    margin: 0; }
+  .main-footer a {
+    color: #fff;
+    text-decoration: underline; }
