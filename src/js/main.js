@@ -3,40 +3,25 @@
 
 $(document).ready(function(){
 
-  // init flip clock
-  $('.timer-clock').FlipClock({
-    clockFace: 'MinuteCounter',
-    callbacks: {
-      interval: function() {
-        checkVals();
-      }
-    }
+  var startMin = 5;
+  var womenSec = 9;
+  var childrenSec = 120;
+  var startWomen = parseInt((startMin * 60) / womenSec);
+  var startChildren = parseInt((startMin * 60) / childrenSec);
+  var startCount = startWomen + startChildren;
+
+  var clock = $('.counter').FlipClock(startCount, {
+    clockFace: 'Counter'
   });
 
-  // update flipper values
-  var i = 0;
-  var womanCount = 0;
-  var childCount = 0;
-  function checkVals() {
-    if ((i !== 0) && (i % 9 === 0)) {
-      womanCount++;
-      $('.women-number').html(womanCount);
-      if (womanCount === 1) {
-        $('.women-noun').html('woman has');
-      } else {
-        $('.women-noun').html('women have');
-      }
+  var sec = 1;
+  setInterval(function() {
+    if ((sec % childrenSec) == 0) {
+      clock.increment();
+    } else if ((sec % womenSec) == 0) {
+      clock.increment();
     }
-    if ((i !== 0) && (i % 120 === 0))  {
-      childCount++;
-      $('.child-number').html(childCount);
-      if (childCount === 1) {
-        $('.child-noun').html('child has');
-      } else {
-        $('.child-noun').html('children have');
-      }
-    }
-    i++;
-  }
 
+    sec++;
+  }, 1000);
 });

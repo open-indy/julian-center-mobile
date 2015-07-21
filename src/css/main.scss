@@ -41,25 +41,55 @@ a {
 //header
 .main-header {
   position: absolute;
-  top: 0;
+  top: 5px;
   left: 0;
   width: 100%;
-  background: rgba(255,255,255,.45);
   padding: 10px 0;
   z-index: 100;
   .main-logo {
     display: block;
-    max-height: 65px;
+    max-height: 80px;
+    max-width: 90%;
     margin: 0 auto;
   }
 }
 
 // masthead
 .masthead {
-  padding: 185px 0 125px;
+  padding: 95px 0 95px;
   text-align: center;
-  background: url(../img/woman1.jpg) no-repeat top center;
+  background: url('../img/woman1.jpg') no-repeat top center;
   background-size: cover;
+
+  .counter-wrapper {
+    .counter-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: -20px;
+    }
+  }
+
+  .counter-footer {
+    position: relative;
+    top: -10px;
+  }
+
+  h3 {
+    font-weight: lighter;
+    font-size: 30px;
+    margin-bottom: -5px;
+    display: inline-block;
+    border-bottom: 1px solid gray;
+  }
+
+  h4 {
+    font-size: 14px;
+    line-height: 16px;
+    color: black;
+    margin-bottom: -10px;
+    font-weight: 300;
+  }
+
   .clock-list {
     padding: 0;
     margin: 20px 0 50px;
@@ -68,13 +98,14 @@ a {
     }
   }
   .ghost-btn {
-    padding: 10px 20px;
+    padding: 15px 35px;
     display: inline-block;
     margin: 0 auto;
-    color: $purple;
-    border: 1px solid $purple;
+    color: #9B59B6;
+    border: 1px solid #9B59B6;
     border-radius: 4px;
     font-weight: 300;
+    font-size: 16px;
     i {
       margin-left: 10px;
     }
@@ -85,6 +116,10 @@ a {
 .flip-clock-wrapper {
   margin: 20px 0;
 }
+.flip.play {
+    margin-right: -2px;
+}
+
 .flip-clock-divider,
 .flip-clock-wrapper ul {
   display: inline-block;
