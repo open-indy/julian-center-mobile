@@ -27,8 +27,8 @@
   <meta name="msapplication-square310x310logo" content="img/favicon/mstile-310x310.png" />
 
   <!-- stylesheets -->
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/flipclock.css">
   <link rel="stylesheet" href="css/main.css">
@@ -57,7 +57,7 @@
         </div>
 
         <div class="counter-footer">
-          <p>Victims in the last 5 minutes, <br/>and counting...</p>
+          <h4>victims in the last 5 minutes, and counting...</h4>
         </div>
 
       </div>
@@ -92,7 +92,7 @@
 
   <section class="family-spacer">
     <p class="jc-stat">Each year, we protect more than 1,000 in our emergency shelter and serve an additional 6,200 in outreach.</p>
-    <img src="img/family1_src.jpg" class="family-photo" alt="">
+    <img src="img/family1.jpg" class="family-photo" alt="">
   </section>
 
   <section class="newsletter-signup">
@@ -110,7 +110,7 @@
   </section>
 
   <footer class="main-footer">
-    <p>&copy; 2015 The Julian Center. Site by <a href="http://www.indycivichack.com/">Open Indy Brigade</a>.
+    <p>&copy; 2015 The Julian Center. Site by <a href="www.meetup.com/Open-Indy-Brigade">Open Indy Brigade</a>.
   </footer>
 
   <!-- scripts -->
@@ -118,6 +118,10 @@
   <script src="js/flipclock.min.js"></script>
   <script src="js/main.js"></script>
   <!-- /scripts -->
+  <script type="text/javascript">
+      var number = Math.floor(Math.random() * 2) === 0 ? '1' : '2' ;
+      $('.masthead').css('background-image', 'url(../img/woman' + number + '.jpg)');
+  </script>
 
 </body>
 </html>

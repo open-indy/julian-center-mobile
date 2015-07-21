@@ -48,13 +48,13 @@ a {
   display: block;
   max-height: 80px;
   max-width: 90%;
-  margin: 0 auto;
+  margin: 10px auto;
 }
 
 .masthead {
   padding: 125px 0 65px;
   text-align: center;
-  background: url("../img/woman1.jpg") no-repeat top center;
+  background: no-repeat top center;
   background-size: cover;
 }
 .masthead .counter-wrapper .counter-title {
@@ -74,8 +74,8 @@ a {
   border-bottom: 1px solid gray;
 }
 .masthead h4 {
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 16px;
+  line-height: 20px;
   color: black;
   margin-bottom: -10px;
   font-weight: 300;
@@ -90,7 +90,7 @@ a {
 .masthead .ghost-btn {
   padding: 15px 35px;
   display: inline-block;
-  margin: 0 auto;
+  margin: 20px auto 10px auto;
   color: #73378C;
   border: 1px solid #9B59B6;
   background-color: rgba(155, 89, 182, 0.09);
