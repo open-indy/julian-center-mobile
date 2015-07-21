@@ -38,24 +38,47 @@ a {
 
 .main-header {
   position: absolute;
-  top: 0;
+  top: 5px;
   left: 0;
   width: 100%;
-  background: rgba(255, 255, 255, 0.45);
   padding: 10px 0;
   z-index: 100;
 }
 .main-header .main-logo {
   display: block;
-  max-height: 65px;
+  max-height: 80px;
+  max-width: 90%;
   margin: 0 auto;
 }
 
 .masthead {
-  padding: 185px 0 125px;
+  padding: 95px 0 95px;
   text-align: center;
-  background: url(../img/woman1.jpg) no-repeat top center;
+  background: url("../img/woman1.jpg") no-repeat top center;
   background-size: cover;
+}
+.masthead .counter-wrapper .counter-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: -20px;
+}
+.masthead .counter-footer {
+  position: relative;
+  top: -10px;
+}
+.masthead h3 {
+  font-weight: lighter;
+  font-size: 30px;
+  margin-bottom: -5px;
+  display: inline-block;
+  border-bottom: 1px solid gray;
+}
+.masthead h4 {
+  font-size: 14px;
+  line-height: 16px;
+  color: black;
+  margin-bottom: -10px;
+  font-weight: 300;
 }
 .masthead .clock-list {
   padding: 0;
@@ -65,13 +88,14 @@ a {
   list-style: none;
 }
 .masthead .ghost-btn {
-  padding: 10px 20px;
+  padding: 15px 35px;
   display: inline-block;
   margin: 0 auto;
   color: #9B59B6;
   border: 1px solid #9B59B6;
   border-radius: 4px;
   font-weight: 300;
+  font-size: 16px;
 }
 .masthead .ghost-btn i {
   margin-left: 10px;
@@ -79,6 +103,10 @@ a {
 
 .flip-clock-wrapper {
   margin: 20px 0;
+}
+
+.flip.play {
+  margin-right: -2px;
 }
 
 .flip-clock-divider,
@@ -89,6 +117,38 @@ a {
 
 .flip-clock-label {
   display: none;
+}
+
+#menu-btn {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: #3d3d3d;
+  height: 60px;
+  width: 60px;
+  font-size: 35px;
+  text-align: center;
+  padding-top: 6px;
+  border-radius: 30px;
+  color: white;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+#fixed-menu {
+  display: none;
+  position: fixed;
+  bottom: 71px;
+  right: 15px;
+  text-align: right;
+}
+#fixed-menu li {
+  list-style: none;
+  font-size: 20px;
+  background-color: #3d3d3d;
+  color: white;
+  padding: 2px 9px;
+  margin-top: 5px;
+  border-radius: 5px;
 }
 
 .about-us {
