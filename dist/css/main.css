@@ -87,6 +87,10 @@ a {
   float: none;
 }
 
+.flip-clock-wrapper ul {
+  width: 55px;
+}
+
 .flip-clock-label {
   display: none;
 }
@@ -120,6 +124,25 @@ a {
   background: #9B59B6;
   border-radius: 4px;
   color: #fff;
+}
+
+.family-spacer {
+  position: relative;
+  font-size: 12px;
+  text-align: center;
+}
+.family-spacer p {
+  position: absolute;
+  padding: 10px 4%;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.75);
+}
+.family-spacer img {
+  display: block;
 }
 
 .newsletter-signup {

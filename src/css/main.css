@@ -76,35 +76,6 @@ a {
 .flip-clock-label {
   display: none; }
 
-#menu-btn {
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-  background-color: #3d3d3d;
-  height: 60px;
-  width: 60px;
-  font-size: 35px;
-  text-align: center;
-  padding-top: 6px;
-  border-radius: 30px;
-  color: white;
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); }
-
-#fixed-menu {
-  display: none;
-  position: fixed;
-  bottom: 71px;
-  right: 15px;
-  text-align: right; }
-  #fixed-menu li {
-    list-style: none;
-    font-size: 20px;
-    background-color: #3d3d3d;
-    color: white;
-    padding: 2px 9px;
-    margin-top: 5px;
-    border-radius: 5px; }
-
 .about-us {
   padding: 50px 0;
   background: #9B59B6;
