@@ -125,7 +125,7 @@ a {
 }
 
 .about-us {
-  padding: 50px 0;
+  padding: 30px 0;
   background: #9B59B6;
   text-align: center;
   color: #fff;
@@ -135,7 +135,7 @@ a {
 }
 
 .how-to-help {
-  padding: 50px 0;
+  padding: 20px 0;
   text-align: center;
 }
 .how-to-help .link-list {
@@ -175,7 +175,7 @@ a {
 }
 
 .newsletter-signup {
-  padding: 50px 0;
+  padding: 20px 0 30px 0;
   text-align: center;
   background: #eee;
 }
