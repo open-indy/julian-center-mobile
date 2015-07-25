@@ -18,8 +18,11 @@
   },
   "homepage": "https://github.com/scott-joe-williams/c4k-julian-center",
   "dependencies": {
+    "body-parser": "^1.13.2",
     "express": "^4.13.1",
-    "node-rest-client": "^1.5.1"
+    "node-rest-client": "^1.5.1",
+    "q": "^1.4.1",
+    "underscore": "^1.8.3"
   },
   "devDependencies": {
     "del": "^1.2.0",
