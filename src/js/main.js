@@ -24,4 +24,55 @@ $(document).ready(function(){
 
     sec++;
   }, 1000);
+  
+  setupNewsletterSignup();
+  
 });
+
+function setupNewsletterSignup() {
+  $('#submit-signup').click(function (event) {
+    event.preventDefault();
+    
+    var emailAddress = $('#newsletter-email').val();
+    
+    signUpSubscriber({ emailAddress: emailAddress});
+    
+  });
+}
+
+function signUpSubscriber(subscriber) {
+  $.ajax({
+    url: '/api/v1/newsletter/signup',
+    method: 'POST',
+    data: subscriber,
+    beforeSend: signUpSubscriber_beforeSend,
+    success: signUpSubscriber_success,
+    error: signUpSubscriber_error,
+    complete: signUpSubscriber_complete
+  });
+}
+
+function signUpSubscriber_beforeSend() {
+  $('#submit-signup').text('Submitting...');
+}
+
+function signUpSubscriber_success(data, status, xhr) {
+  if (data && data.status === 'success') {
+    $('#submission-result').empty().append('<span>Success!</span>');
+  } else {
+    $('#submission-result').empty().append('<span>Error!</span>');
+    $('#newsletter-email').addClass('error');
+  }
+}
+
+function signUpSubscriber_error(xhr, status, e) {
+  var error = xhr.responseJSON;
+  
+  $('#submission-result').empty().append('<span>' + error.message + '</span>');
+  $('#newsletter-email').addClass('error');
+}
+
+
+function signUpSubscriber_complete() {
+  $('#submit-signup').text('Submit');
+}
