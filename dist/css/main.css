@@ -160,7 +160,7 @@ a {
   position: relative;
   font-size: 12px;
   text-align: center;
-  background-color: rgba(155, 89, 182, 0.5);
+  background-color: rgba(155, 89, 182, 0.9);
 }
 .family-spacer p {
   position: absolute;
@@ -170,7 +170,7 @@ a {
   width: 100%;
   margin: 0;
   color: #fff;
-  background: black;
+  background: rgba(0, 0, 0, 0.75);
 }
 .family-spacer div {
   display: block;
