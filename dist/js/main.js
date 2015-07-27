@@ -1,1 +1,1 @@
-$(document).ready(function(){var e=5,n=9,t=120,c=parseInt(60*e/n),r=parseInt(60*e/t),o=c+r,a=$(".counter").FlipClock(o,{clockFace:"Counter"}),i=1;setInterval(function(){i%t==0?a.increment():i%n==0&&a.increment(),i++},1e3)});
+var number=0===Math.floor(2*Math.random())?"1":"2";$(".masthead").css("background-image","url(../img/woman"+number+".jpg)"),$(document).ready(function(){var n=5,e=9,r=120,a=parseInt(60*n/e),t=parseInt(60*n/r),c=a+t,o=$(".counter").FlipClock(c,{clockFace:"Counter"}),m=1;setInterval(function(){m%r==0?o.increment():m%e==0&&o.increment(),m++},1e3)});

@@ -62,7 +62,7 @@
 
       </div>
       <div class="row">
-        <h4 class="ghost-btn">Help Us Change Lives <i class="fa fa-arrow-circle-o-down"></i></h4>
+        <h4 class="ghost-btn">Help Us Save Lives <i class="fa fa-arrow-circle-o-down"></i></h4>
       </div>
     </div>
   </section>
@@ -71,7 +71,8 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-        <p>The Julian Center has been a leader in providing shelter and hope to victims of domestic and sexual violence and their families in central Indiana since 1975.  With a mission of Saving Lives! Changing Lives!, The Julian Center assists those thousands of people annually who are dealing with domestic violence and sexual abuse and helps them discover a path to independence through crisis assistance, economic empowerment, transitional services, and long-term support.</p>
+        <!-- <p>The Julian Center has been a leader in providing shelter and hope to victims of domestic and sexual violence and their families in central Indiana since 1975. With a mission of Saving Lives! Changing Lives!, The Julian Center assists those thousands of people annually who are dealing with domestic violence and sexual abuse and helps them discover a path to independence through crisis assistance, economic empowerment, transitional services, and long-term support.</p> -->
+        <p>The Julian Center has been a leader in providing shelter and hope to victims of domestic and sexual violence and their families in central Indiana since 1975.</p>
         </div>
       </div>
     </div>
@@ -83,8 +84,16 @@
         <h1>How Can You Help?</h1>
         <p>In order to help those that need us most we appreciate any monetary, time, or item donations.</p>
         <ul class="link-list">
-          <li><a href="#" class="btn">Donate Today</a></li>
-          <li>or <a href="#" class="underline">View Volunteer Opportunities</a></li>
+          <li>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="hosted_button_id" value="CK47ZD43UK9X6">
+              <!-- <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt=""> -->
+              <button class="btn">Donate Today</button>
+              <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+            </form>
+          </li>
+          <li>or <a href="//www.juliancenter.org/Get-Involved/Volunteer.aspx" class="underline">View Volunteer Opportunities</a></li>
         </ul>
       </div>
     </div>
@@ -92,7 +101,7 @@
 
   <section class="family-spacer">
     <p class="jc-stat">Each year, we protect more than 1,000 in our emergency shelter and serve an additional 6,200 in outreach.</p>
-    <img src="img/family1.jpg" class="family-photo" alt="">
+    <div><img src="img/family1.jpg" class="family-photo" alt="Happy family"></div>
   </section>
 
   <section class="newsletter-signup">
@@ -118,10 +127,6 @@
   <script src="js/flipclock.min.js"></script>
   <script src="js/main.js"></script>
   <!-- /scripts -->
-  <script type="text/javascript">
-      var number = Math.floor(Math.random() * 2) === 0 ? '1' : '2' ;
-      $('.masthead').css('background-image', 'url(../img/woman' + number + '.jpg)');
-  </script>
 
 </body>
 </html>

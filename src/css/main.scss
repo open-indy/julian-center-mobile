@@ -165,6 +165,7 @@ a {
     background: $purple;
     border-radius: 4px;
     color: #fff;
+    width: 100%;
   }
 
 }
@@ -173,6 +174,7 @@ a {
   position: relative;
   font-size: 12px;
   text-align: center;
+  background-color: rgba(155, 89, 182, 0.5);
   p {
     position: absolute;
     padding: 10px 4%;
@@ -181,10 +183,12 @@ a {
     width: 100%;
     margin: 0;
     color: #fff;
-    background: rgba(0,0,0,.75);
+    background: rgba(0,0,0,1);
   }
-  img {
+  div {
     display: block;
+    max-width: 1100px;
+    margin: 0 auto;
   }
 }
 
