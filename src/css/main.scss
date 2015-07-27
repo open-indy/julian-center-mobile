@@ -174,7 +174,7 @@ a {
   position: relative;
   font-size: 12px;
   text-align: center;
-  background-color: rgba(155, 89, 182, 0.5);
+  background-color: rgba(155, 89, 182, 1);
   p {
     position: absolute;
     padding: 10px 4%;
@@ -183,7 +183,7 @@ a {
     width: 100%;
     margin: 0;
     color: #fff;
-    background: rgba(0,0,0,1);
+    background: rgba(0,0,0,.75);
   }
   div {
     display: block;
