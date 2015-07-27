@@ -16,12 +16,11 @@ gulp.task('sass', function() {
 });
 
 gulp.task('scripts', function() {
-    return gulp.src('src/js/main.js')
+    return gulp.src(['src/js/main.js'])
         .pipe(concat('main.js'))
         .pipe(uglify())
         .pipe(gulp.dest('dist/js'));
 });
-
 
 gulp.task('move', ['clean', 'sass', 'scripts'], function(){
     gulp.src('src/css/flipclock.css')
