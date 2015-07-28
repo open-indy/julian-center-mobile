@@ -24,8 +24,9 @@ img {
   height: auto;
 }
 
-a {
+a, a:visited, a:active, a:focus, a:hover {
   color: $purple;
+  text-decoration: underline;
 }
 
 .container {
@@ -160,7 +161,7 @@ a {
   .btn {
     display: block;
     text-align: center;
-    margin: 15px 0;
+    margin: 0;
     padding: 15px;
     background: $purple;
     border-radius: 4px;
@@ -241,7 +242,7 @@ a {
   p {
     margin: 0;
   }
-  a {
+  a, a:visited, a:active, a:focus, a:hover {
     color: #fff;
     text-decoration: underline;
   }

@@ -28,6 +28,12 @@ $(document).ready(function(){
   }, 1000);
 
   setupNewsletterSignup();
+
+  $('.masthead h4.ghost-btn').on('click', function(){
+    $('html,body').animate({
+      scrollTop: $('section.how-to-help').offset().top
+    }, 500);
+  });
 });
 
 function setupNewsletterSignup() {
